@@ -17,7 +17,7 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     } else {
-        echo '<img src="https://i.pinimg.com/originals/56/d9/c3/56d9c3fd6524357656ae3b3b39d7ab66.gif"><p>Conexão bem-sucedida</p>';
+        echo '<img src="https://i.pinimg.com/originals/4c/b9/b5/4cb9b5812328d2fe27c752f2938ff810.gif"><p>Conexão bem-sucedida</p>';
     }
     // Adiciona a coluna 'imagem' à tabela 'produtos' se ela não existir 
     $sql = "SHOW COLUMNS FROM produtos LIKE 'imagem'";
