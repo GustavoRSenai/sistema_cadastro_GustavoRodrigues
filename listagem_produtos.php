@@ -22,7 +22,7 @@ if ($conn->query($sql) === TRUE) {
     <link rel="stylesheet" href="styles.css">
     <title>Listagem de Produtos</title>
 </head>
-<body>
+<body style="width: 100vw; height: 100vh;">
     <div class="container">
         <h2>Listagem de Produtos</h2>
         <?php if (isset($mensagem)) echo "<p class='message" .($conn->error ? "error" : "success"). "'> $mensages</p>"; 

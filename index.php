@@ -9,7 +9,7 @@
     <!-- Link para o arquivo CSS para estilização da página -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body style="width: 100vw; height: 100vh;">
     <div class="container">
         <!-- Exibe uma mensagem de boas-vindas com o nome do usuário logado -->
         <h2>Bem-vindo, <?php echo $_SESSION['usuario']; ?></h2>
