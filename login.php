@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $usuario = $_POST['usuario'];
     $senha = md5($_POST['senha']);
 
-    $sql = "SELECT * FROM usuarios WHERE usuario='usuario' AND senha='$senha'";
+    $sql = "SELECT * FROM usuarios WHERE usuario='$usuario' AND senha='$senha'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0){
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Login</title>
 </head>
 <body>
